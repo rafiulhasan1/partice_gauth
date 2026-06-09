@@ -1,13 +1,7 @@
-import { GoogleAuthProvider } from "firebase/auth/web-extension";
+
 import { NavLink } from "react-router-dom";
 
 const Navber = () => {
-
-    const provider = GoogleAuthProvider();
-
-    const loginWithGoogle = () => {
-        console.log("loogin")
-    }
 
     const links = <>
         <li> <NavLink to='/'>Home</NavLink> </li>
@@ -35,7 +29,7 @@ const Navber = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a onClick={loginWithGoogle} className="btn btn-primary">sign in with Google</a>
+    <a className="btn btn-primary"> <NavLink to='login'>sign in</NavLink> </a>
   </div>
 </div>
     );
