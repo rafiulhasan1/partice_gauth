@@ -5,7 +5,9 @@ const Navber = () => {
 
     const links = <>
         <li> <NavLink to='/'>Home</NavLink> </li>
-        <li> <NavLink to='/'>About</NavLink> </li>
+        <li> <NavLink to='/formLogin'>Login</NavLink> </li>
+        <li> <NavLink to='/registerForm'>Register</NavLink> </li>
+        <li> <NavLink to='/'>Register 2</NavLink> </li>
     </>
 
     return (
@@ -29,7 +31,7 @@ const Navber = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn btn-primary"> <NavLink to='login'>sign in</NavLink> </a>
+    <NavLink className="btn btn-primary" to='glogin'>sign in</NavLink>
   </div>
 </div>
     );

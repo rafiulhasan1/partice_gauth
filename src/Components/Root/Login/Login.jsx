@@ -34,8 +34,13 @@ const Login = () => {
     return (
         <div>
             <div className="m-5 flex justify-center">
+                {/* <button onClick={loginWithGoogle} className="btn btn-primary">sign in with google</button>
+                <button onClick={logout} className="btn btn-primary ml-3">Logout</button> */}
+            
+            {
+                user ? <button onClick={logout} className="btn btn-primary ml-3">Logout</button> :
                 <button onClick={loginWithGoogle} className="btn btn-primary">sign in with google</button>
-                <button onClick={logout} className="btn btn-primary ml-3">Logout</button>
+            }
             </div>
             {
                 user && <div>

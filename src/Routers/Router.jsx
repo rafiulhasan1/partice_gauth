@@ -3,6 +3,8 @@ import Root from "../Components/Root/Root";
 import Home from "../Components/Root/Home/Home";
 import ErrorPage from "../Components/Root/ErrorPage/ErrorPage";
 import Login from "../Components/Root/Login/Login";
+import FormLogin from "../Components/Root/FormLogin/FormLogin";
+import RegisterForm from "../Components/Root/RegisterForm/RegisterForm";
 
 const Router = createBrowserRouter([
     {
@@ -15,7 +17,15 @@ const Router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path:'login',
+                path: '/formLogin',
+                element: <FormLogin/>
+            },
+            {
+                path: '/registerForm',
+                element: <RegisterForm/>
+            },
+            {
+                path:'glogin',
                 element: <Login/>
             }
         ]
